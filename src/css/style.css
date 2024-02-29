@@ -8,13 +8,21 @@ body {
     height: 100vh;
     background-size: cover;
     font-family: "Open Sans", sans-serif;
-    font-weight: 300;
     font-size: 1.9rem;
     color: #fff;
-    padding: 53px 70px;
+    padding: 53px 70px 0 70px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "header"
+                         "container"
+                         "footer";
 }
 
 /* HEADER */
+
+.header {
+    grid-area: header;
+}
 
 .header .logo {
     padding-bottom: 82px;
@@ -27,6 +35,7 @@ body {
 /* MAIN */
 
 .container {
+    grid-area: container;
     display: flex;
     justify-content: space-between;
 }
@@ -38,6 +47,9 @@ body {
 .container .message {
     width: 41.7%;
     padding: 41px 11px 0 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .container .message .headline h1 {
@@ -53,26 +65,43 @@ body {
 }
 
 .container .message .btn-register {
-    padding: 14px 65px;
+    padding-block: 14px;
+}
+
+.container .message .btn-register a {
     background-color: #fff;
-    color: hsl(257, 40%, 49%);
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 1.8rem;
     border-radius: 50px;
     box-shadow: 2px 5px 15px hsl(257, 46%, 27%);
+    color: hsl(257, 40%, 49%);
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 14px 65px;
+    transition: 0.2s;
+}
+
+.container .message .btn-register a:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
 }
 
 /* FOOTER */
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
 
 .footer nav .social ul {
     display: flex;
     justify-content: flex-end;
     padding-right: 10px;
-    padding-top: 10px;
+    padding-bottom: 15px;
 }
 
-.footer nav .social .icon {
+.footer nav .social ul .icon {
     width: 40px;
     height: 40px;
     border: 1px solid #fff;
@@ -81,14 +110,26 @@ body {
     justify-content: center;
     align-items: center;
     margin-left: 15px;
+    transition: 0.1s;
 }
 
 .footer nav .social ul li a {
     color: #fff;
     font-size: 2rem;
-    padding: 8px;
+    padding: 8px 15px;
+    transition: 0.1s;
+}
+
+.footer nav .social ul li a:hover {
+    color: hsl(300, 69%, 71%);
+}
+
+.footer nav .social ul .icon:hover {
+    border: 1px solid hsl(300, 69%, 71%);
 }
 
 .footer .attribution {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
     text-align: center;
 }

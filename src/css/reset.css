@@ -1,8 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    border: none;
-    outline: none;
+    /* border: none; */
+    /* outline: none; */
     font-weight: 300;
     box-sizing: border-box;
 }
@@ -18,4 +18,11 @@ ul {
 
 img {
     max-width: 100%;
+}
+
+button {
+    background-color: none;
+    text-decoration: none;
+    color: none;
+    border: none;
 }
