@@ -1,0 +1,68 @@
+@media (max-width: 900px) {
+    body {
+        grid-template-rows: 0.4fr 1fr 0.5fr;
+        grid-template-columns: 0.25fr 2fr 0.25fr; 
+    }
+
+    .header .logo img {
+        width: 125px;
+        padding-top: 20px;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+    }
+
+    .container .message {
+        padding: 0;
+    }
+
+    .container .message .headline {
+        align-self: center;
+        text-align: center;
+    }
+
+    .container .message .headline h1 {
+        font-size: 2.3rem;
+        padding-bottom: 20px;
+    }
+
+    .container .message .subtext p {
+        font-size: 1.65rem;
+        text-align: center;
+        line-height: 24px;
+        margin-bottom: 11px;
+    }
+
+    .container .message .btn-register {
+        align-self: center;
+        margin-bottom: 20px;
+    }
+
+    .footer nav .social ul {
+        justify-content: center;
+    }
+
+    .container .message .btn-register a {
+        padding: 10px 75px;
+        font-size: 1.2rem;
+    }
+
+    .footer nav .social ul {
+        padding-right: 10px;
+        padding-bottom: 20px;
+    }
+
+    .footer nav .social ul .icon {
+        width: 25px;
+        height: 25px;
+        margin-left: 15px;
+    }
+    
+    .footer nav .social ul li a {
+        font-size: 1.25rem;
+        padding: 8px 15px;
+    }
+}

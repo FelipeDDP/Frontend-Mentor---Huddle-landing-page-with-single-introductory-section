@@ -10,22 +10,24 @@ body {
     font-family: "Open Sans", sans-serif;
     font-size: 1.9rem;
     color: #fff;
-    padding: 53px 70px 0 70px;
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "header"
-                         "container"
-                         "footer";
+    grid-template-rows: 1fr 1fr 0.5fr;
+    grid-template-areas: ". header ."
+                         ". container ."
+                         ". footer .";
+    grid-template-columns: 0.1fr 2fr 0.1fr;                     
 }
 
 /* HEADER */
 
 .header {
     grid-area: header;
+    display: flex;
+    align-items: center;
 }
 
 .header .logo {
-    padding-bottom: 82px;
+    padding-bottom: 32px;
 }
 
 .header .logo img {
@@ -36,21 +38,25 @@ body {
 
 .container {
     grid-area: container;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-areas: "mock message";
+    grid-template-columns: 2.3fr minmax(420px, 1.7fr);
+    gap: 20px;
 }
 
-.coontainer .mock {
-    width: auto;
-}
+.container .mock {
+    grid-area: mock;
+    }
 
 .container .message {
-    width: 41.7%;
-    padding: 41px 11px 0 7px;
+    grid-area: message;
+    padding: 45px 11px 0 16px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
+
+
 
 .container .message .headline h1 {
     font-family: "Poppins", sans-serif;
@@ -98,7 +104,7 @@ body {
     display: flex;
     justify-content: flex-end;
     padding-right: 10px;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
 }
 
 .footer nav .social ul .icon {
@@ -132,4 +138,8 @@ body {
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.5rem;
     text-align: center;
+}
+
+.attribution a {
+    color: hsl(300, 65%, 78%);
 }
