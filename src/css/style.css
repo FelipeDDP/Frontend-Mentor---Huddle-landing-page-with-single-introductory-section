@@ -1,0 +1,94 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: url('../images/bg-desktop.svg') center center no-repeat;
+    background-color: hsl(257, 40%, 49%);
+    height: 100vh;
+    background-size: cover;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 1.9rem;
+    color: #fff;
+    padding: 53px 70px;
+}
+
+/* HEADER */
+
+.header .logo {
+    padding-bottom: 82px;
+}
+
+.header .logo img {
+    width: 215px
+}
+
+/* MAIN */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.coontainer .mock {
+    width: auto;
+}
+
+.container .message {
+    width: 41.7%;
+    padding: 41px 11px 0 7px;
+}
+
+.container .message .headline h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+    padding-bottom: 20px;
+}
+
+.container .message .subtext p {
+    line-height: 27px;
+    margin-bottom: 23px;
+}
+
+.container .message .btn-register {
+    padding: 14px 65px;
+    background-color: #fff;
+    color: hsl(257, 40%, 49%);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    border-radius: 50px;
+    box-shadow: 2px 5px 15px hsl(257, 46%, 27%);
+}
+
+/* FOOTER */
+
+.footer nav .social ul {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.footer nav .social .icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.footer nav .social ul li a {
+    color: #fff;
+    font-size: 2rem;
+    padding: 8px;
+}
+
+.footer .attribution {
+    text-align: center;
+}
