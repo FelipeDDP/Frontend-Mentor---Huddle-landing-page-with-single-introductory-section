@@ -1,3 +1,18 @@
+@media (max-width: 1224px) {
+    .container .message {
+        padding-top: 20px;
+    }
+
+    .container .message .headline h1 {
+        font-size: 3rem;
+    }
+
+    .container .message .subtext p {
+        font-size: 1.7rem;
+        line-height: 24px;
+    }
+}
+
 @media (max-width: 900px) {
     body {
         grid-template-rows: 0.4fr 1fr 0.5fr;
@@ -5,8 +20,8 @@
     }
 
     .header .logo img {
-        width: 125px;
-        padding-top: 20px;
+        width: 175px;
+        padding-top: 40px;
     }
     
     .container {
@@ -64,5 +79,12 @@
     .footer nav .social ul li a {
         font-size: 1.25rem;
         padding: 8px 15px;
+    }
+}
+
+@media (max-width: 425px) {
+    .header .logo img {
+        width: 125px;
+        padding-top: 20px;
     }
 }
